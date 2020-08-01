@@ -6,8 +6,8 @@ The focus of this project is building a k-means cluster algorithm from scratch w
 
 Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group called cluster are more similar  to each other than to those in other groups or clusters. We can use clustering analysis to gain some valuable insights from our data by seeing what groups the data points fall into when we apply a clustering algorithm
 
-![eda of cluster](images/exploration2.PNG)
-
+| ![eda of mnist data](images/exploration1.PNG) | ![eda of cluster](images/exploration2.PNG) |
+|:--:|:--:| 
 
 There are two main types of classification:
 
