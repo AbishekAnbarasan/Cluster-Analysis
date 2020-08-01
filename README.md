@@ -1,6 +1,6 @@
 # Cluster Analysis
 
-The focus of this project is building a **k-means** cluster algorithm from scratch without us of any publicly avaliable libraries. The algorithm is then tested using Fashion MNIST dataset.
+The focus of this project is building a **k-means** cluster algorithm from scratch without use of any publicly avaliable libraries. The algorithm is then applied for Fashion MNIST dataset.
 
 ## Clustering
 
@@ -21,6 +21,7 @@ k-means is one of the simplest unsupervised learning algorithms that solve the w
 
 | ![eda of mnist data](images/cluster1.PNG) | ![eda of cluster](images/cluster2.PNG) | ![eda of cluster](images/cluster3.PNG) |
 | :---------------------------------------: | :------------------------------------: | -------------------------------------- |
+
 
 ### pseudocode:
 
@@ -43,5 +44,18 @@ metric_type   --> wcSSE,silhouetteCoeff,nmi
 
 ```
 
+#### Cluster Validation
 
+    1. Silhoutte
+        Silhouette refers to a method of interpretation and validation of consistency within clusters of data. The technique provides a succinct graphical representation of how well each object has been classified.The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. If most objects have a high value, then the clustering configuration is appropriate. If many points have a low or negative value, then the clustering configuration may have too many or too few clusters.The silhouette can be calculated with any distance metric, such as the Euclidean distance or the Manhattan distance.
+
+    2. Within Cluster Sum of squares
+        The sum of the squared deviations from each observation and the cluster centroid.
+        Interpretation. The within-cluster sum of squares is a measure of the variability of the observations within each cluster. In general, a cluster that has a small sum of squares is more compact than a cluster that has a large sum of squares. Clusters that have higher values exhibit greater variability of the observations within the cluster.
+
+    3. Normalized mutuall information gain
+        Normalized Mutual Information (NMI) is a normalization of the Mutual Information (MI) score to scale the results between 0 (no mutual information) and 1 (perfect correlation). In this function, mutual information is normalized by some generalized mean of H(labels_true) and H(labels_pred)), defined by the average_method.
+
+| ![metric evaluation](images/group.JPG) |
+| :------------------------------------: |
 
